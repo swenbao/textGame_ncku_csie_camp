@@ -15,7 +15,7 @@ def mystery_dots():
     print(".", end="", flush=True)
     time.sleep(0.5)
     print(".", end="", flush=True)
-    time.sleep(1)
+    time.sleep(0.5)
 
 weapons = []
 
