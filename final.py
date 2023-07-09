@@ -4,17 +4,17 @@ def print_slowly(text):
     lines = text.splitlines()
     for i, line in enumerate(lines):
         if i == len(lines) - 1:
-            print(line, end="")
+            print(line, end="", flush=True)
         else:
-            print(line)
-        time.sleep(1)
+            print(line, flush=True)
+        time.sleep(0.5)
 
 def mystery_dots():
-    print(".", end="")
+    print(".", end="", flush=True)
     time.sleep(0.5)
-    print(".", end="")
+    print(".", end="", flush=True)
     time.sleep(0.5)
-    print(".", end="")
+    print(".", end="", flush=True)
     time.sleep(1)
 
 weapons = []
